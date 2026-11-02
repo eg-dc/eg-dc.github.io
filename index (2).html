@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giveaway Bot for Discord – Recurring Giveaways, Bonus Entries &amp; Web Panel</title>
+<meta name="description" content="Run giveaways on Discord with one command. Recurring giveaways, bonus entries per role, entry requirements, winner roles, rerolls and a web panel. Free to add to your server.">
+<meta name="keywords" content="discord giveaway bot, discord bot, giveaway bot, recurring giveaways, discord raffle bot, discord giveaway web panel">
+<meta name="author" content="Giveaway Bot"><meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#16143a"><link rel="canonical" href="https://eg-dc.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎉%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Giveaway Bot"><meta property="og:url" content="https://eg-dc.github.io/">
+<meta property="og:title" content="Giveaway Bot for Discord"><meta property="og:description" content="Recurring giveaways, bonus entries, entry requirements and a web panel. Add it to your server in one click.">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Giveaway Bot for Discord"><meta name="twitter:description" content="Recurring giveaways, bonus entries, entry requirements and a web panel.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Giveaway Bot","applicationCategory":"CommunicationApplication","operatingSystem":"Discord","description":"A Discord bot for running giveaways with recurring schedules, bonus entries, entry requirements and a web panel.","url":"https://eg-dc.github.io/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Giveaway Bot free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Adding the bot and using all features is free."}},{"@type":"Question","name":"Which permissions does the bot need?","acceptedAnswer":{"@type":"Answer","text":"View Channels, Send Messages and Embed Links. Manage Roles is only needed if you want to give winners a role."}},{"@type":"Question","name":"Is the source code public?","acceptedAnswer":{"@type":"Answer","text":"No. The bot is closed source."}}]}</script>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="w">
+<header class="top"><a class="logo" href="/"><i>🎉</i>Giveaway Bot</a><a class="l" href="#features">Features</a><a class="l" href="#commands">Commands</a><a class="l" href="#faq">FAQ</a><a class="btn" href="https://discord.com/oauth2/authorize?client_id=1442168529854926980&permissions=19456&integration_type=0&scope=bot+applications.commands" rel="noopener">Add to Discord</a></header>
+
+<main>
+<div class="hero">
+ <div>
+  <h1>Giveaways your server will actually enjoy.</h1>
+  <p class="lead">Start a giveaway with one slash command. Set entry requirements, hand out bonus entries to boosters, schedule weekly drops and manage everything from a clean web panel.</p>
+  <div class="acts"><a class="btn" href="https://discord.com/oauth2/authorize?client_id=1442168529854926980&permissions=19456&integration_type=0&scope=bot+applications.commands" rel="noopener">Add to your server</a><a class="btn ghost" href="https://egdc.shares.zrok.io" rel="noopener">Open web panel</a></div>
+  <p class="note">Free to use. Needs only View Channels, Send Messages and Embed Links.</p>
+ </div>
+ <aside class="ticket" aria-label="Example giveaway">
+  <span class="tag">🎉 NEW GIVEAWAY!</span><h3 style="margin:4px 0">Nitro Classic (1 month)</h3>
+  <span class="cd" id="cd" aria-live="off">02:14:09</span><span class="m">3 winners · 128 joined · VIP +3 entries</span>
+  <div class="stub"></div><span class="b">🎉 Join Giveaway!</span> <span class="b" style="background:var(--line);color:var(--ink)">👥 Show Participants</span>
+ </aside>
+</div>
+
+<section id="features"><div class="split">
+ <div><h2>Everything a giveaway needs, nothing it doesn’t.</h2><p style="color:var(--ink2)">Built for community managers who want fair draws and less manual work.</p></div>
+ <dl class="feat">
+  <div><dt>Recurring giveaways</dt><dd>Start a fresh giveaway every day, week or month automatically, with a run limit if you want one.</dd></div>
+  <div><dt>Bonus entries per role</dt><dd>Reward boosters, supporters or veterans with extra chances. Every extra entry is shown on the giveaway.</dd></div>
+  <div><dt>Entry requirements</dt><dd>Require a minimum account age, server membership time, past participations or wins, or specific roles.</dd></div>
+  <div><dt>Winner roles &amp; DMs</dt><dd>Give winners a role and send prize details by direct message automatically.</dd></div>
+  <div><dt>Fair rerolls</dt><dd>Reroll any ended giveaway. Previous winners are skipped while other eligible members remain.</dd></div>
+  <div><dt>Blacklist &amp; audit log</dt><dd>Block abusers from entering and keep a log of every action in a channel of your choice.</dd></div>
+  <div><dt>Web panel</dt><dd>Sign in with Discord to join giveaways, see the leaderboard and, with Manage Server, create and edit giveaways in your browser.</dd></div>
+  <div><dt>Statistics &amp; CSV export</dt><dd>Personal stats, a server leaderboard and participant lists as CSV.</dd></div>
+ </dl>
+</div></section>
+
+<section><h2>Up and running in three steps</h2>
+<ol class="steps"><li><h3>Add the bot</h3>Click “Add to Discord” and pick your server.</li><li><h3>Run /giveaway</h3>Enter a prize, winner count and duration such as <code>1h30m</code> or <code>2d</code>.</li><li><h3>Let it run</h3>Members join with one button. The bot draws winners and announces them when time is up.</li></ol></section>
+
+<section id="commands"><h2>Commands</h2>
+<p style="color:var(--ink2)">Management commands need the <em>Manage Server</em> permission.</p>
+<div class="scroll"><table><tr><th>Command</th><th>What it does</th></tr>
+<tr><td><code>/giveaway</code></td><td>Start a giveaway with optional description, roles, winner role, DM and bonus entries</td></tr>
+<tr><td><code>/giveaway_list</code> <code>/giveaway_edit</code></td><td>Browse and edit running giveaways</td></tr>
+<tr><td><code>/giveaway_end</code> <code>/giveaway_cancel</code></td><td>End now or cancel a giveaway</td></tr>
+<tr><td><code>/giveaway_reroll</code></td><td>Draw new winners for an ended giveaway</td></tr>
+<tr><td><code>/recurring_create</code> <code>/recurring_list</code> <code>/recurring_delete</code></td><td>Manage recurring giveaways</td></tr>
+<tr><td><code>/set_participation_requirements</code></td><td>Set minimum account age, server time, participations, wins or losses</td></tr>
+<tr><td><code>/set_ping_role</code> <code>/set_audit_channel</code></td><td>Ping a role on new giveaways, choose the audit log channel</td></tr>
+<tr><td><code>/blacklist add|remove|list</code></td><td>Block or unblock members</td></tr>
+<tr><td><code>/export_participants</code></td><td>Participant list as CSV</td></tr>
+<tr><td><code>/stats</code> <code>/leaderboard</code> <code>/my_stats</code></td><td>Server and personal statistics (everyone)</td></tr>
+<tr><td><code>/leave_giveaway</code> <code>/webui</code></td><td>Leave a giveaway, get the web panel link (everyone)</td></tr></table></div></section>
+
+<section id="faq"><h2>Questions</h2>
+<details><summary>Is it free?</summary><p>Yes. Adding the bot and all features are free.</p></details>
+<details><summary>Which permissions does the bot need?</summary><p>View Channels, Send Messages and Embed Links. Manage Roles is only needed for winner-role rewards; use the <a href="https://discord.com/oauth2/authorize?client_id=1442168529854926980&permissions=268454912&integration_type=0&scope=bot+applications.commands" rel="noopener">invite with Manage Roles</a> if you want that, and place the bot’s role above the reward role.</p></details>
+<details><summary>What data does the bot store?</summary><p>Only what giveaways need: Discord IDs, participation counts and your server settings. No message content. Details are in the <a href="privacy.html">Privacy Policy</a>.</p></details>
+<details><summary>How does the web panel decide who can manage giveaways?</summary><p>You sign in with Discord (identity only). Your rights are read live from the server: members can view and join, people with Manage Server or Administrator can manage.</p></details>
+<details><summary>Is the code public?</summary><p>No. The bot is closed source.</p></details>
+<details><summary>Can’t see the slash commands?</summary><p>Make sure the bot was added with the <code>applications.commands</code> scope (the invite link here includes it) and that your server’s Integrations settings allow the commands in that channel.</p></details></section>
+
+<div class="cta"><h2>Ready for your first giveaway?</h2><p>It takes about a minute.</p><div class="acts" style="justify-content:center"><a class="btn" href="https://discord.com/oauth2/authorize?client_id=1442168529854926980&permissions=19456&integration_type=0&scope=bot+applications.commands" rel="noopener">Add Giveaway Bot</a><a class="btn ghost" href="https://egdc.shares.zrok.io" rel="noopener">Web panel</a></div></div>
+</main>
+<footer><span>© 2026 Giveaway Bot. Not affiliated with or endorsed by Discord Inc.</span><a href="privacy.html">Privacy Policy</a><a href="https://egdc.shares.zrok.io" rel="noopener">Web panel</a></footer>
+</div>
+<script>
+(function(){var e=document.getElementById('cd'),t=Date.now()+8049e3;function p(n){return String(n).padStart(2,'0')}
+function u(){var s=Math.max(0,Math.floor((t-Date.now())/1000));e.textContent=p(Math.floor(s/3600))+':'+p(Math.floor(s%3600/60))+':'+p(s%60)}u();setInterval(u,1000)})();
+</script>
+</body></html>
